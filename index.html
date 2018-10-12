@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Drag & Drop</title>
+          <meta charset="utf-8">   
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> 
+          <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>     
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>  
+    </head>
+    <body>
+    <h1><em>YUMMY TUMMY</em></h1>
+    <p><em>Drag and drop the items to place your order - Click the <i class='far fa-times-circle'></i> to remove the item</em></p> 
+    <div id="contenedor">
+    <div id="products">
+        <div id="catalog">
+            <h2><a href="#">Drinks</a></h2>
+            <div>
+              <ul>
+                <li data-precio="40"><img src="img/softdrink.png"> Soft Drinks</li>
+                <li data-precio="25"><img src="img/water.png"> Water</li>
+                <li data-precio="70"><img src="img/wine.png"> Wine</li>
+                <li data-precio="45"><img src="img/coffee.png"> Coffee</li>
+              </ul>
+            </div>
+            <h2><a href="#">Food</a></h2>
+            <div>
+              <ul>
+                <li data-precio="450"><img src="img/pizza.png"> Pizza</li>
+                <li data-precio="200"><img src="img/hamburger.png"> Burger</li>
+                <li data-precio="150"><img src="img/hotdog.png"> Hotdog</li>
+                <li data-precio="80"><img src="img/fries.png"> Fries</li>
+              </ul>
+            </div>
+            <h2><a href="#">Dessert</a></h2>
+            <div>
+              <ul>
+                <li data-precio="80"><img src="img/icecream.png"> Ice Cream</li>
+                <li data-precio="100"><img src="img/pie.png"> Chocolate Cake</li>
+                <li data-precio="50"><img src="img/cupcake.png"> Cupcakes</li>
+                <li data-precio="75"><img src="img/donut.png"> Donuts</li>
+              </ul>
+            </div>
+      </div>
+    </div>
+     
+    <div id="cart">
+      <div class="ui-widget-content">
+        <ol>
+          <h2>Your Order</h2>     
+        </ol>
+      </div>
+    </div>
+     <p id="subtotal">Subtotal: $<strong>0</strong></p>
+    </div>
+    </body>
+    </html>
